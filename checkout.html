@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="overflow-y: scroll;">
+    <div class="body">
+        <!--############################        CHECKOUT        ###################################-->
+        <div class="checkout">
+            <div class="checkout__grid">
+                <div class="checkout__left">
+                    <h4 class="checkout__left--heading">
+                        Checkout
+                    </h4>
+                    <div class="checkout__left--pagecontainer">
+                        <!--####################        MAINCONTAINER       ###########################-->
+                        <div class="checkout__left--maincontainer select">
+                            
+                            <div class="checkout__left--checkboxcontainer">
+                                <input type="checkbox" id="applypromocode" class="checkout__left--checkbox" data-select="1">
+                                <label for="applypromocode" class="checkout__left--paragraph">Apply promo codes and gift cards</label>
+                            </div>
+                            <form action="#" class="checkout__left--promobox" data-select="1">
+                                <input type="text" id="coupon" class="checkout__left--text" placeholder="Add promo or coupon code">
+                                <button class="checkout__left--button">Add</button>
+                            </form>
+                            <form action="#" class="checkout__left--promobox" data-select="1">
+                                <input type="text" id="gift" class="checkout__left--text" placeholder="Gift card code">
+                                <button class="checkout__left--button">Add</button>
+                            </form>
+                            <div class="checkout__left--checkoutbox">
+                                <a href="#" class="checkout__left--checkout">Paypal checkout</a>
+                                <a href="#" class="checkout__left--checkout">Amazon pay</a>
+                            </div>
+        
+                            <form action="#" class="checkout__left--form">
+                                <p class="checkout__left--infoparagraph">
+                                    Shipping information
+                                </p>
+                                <div class="checkout__left--grid">
+                                    <div class="checkout__left--fieldbox">
+                                        <p class="checkout__left--fieldparagraph">Email</p>
+                                        <input type="email" id="semail" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-2">
+                                        <p class="checkout__left--fieldparagraph">First name</p>
+                                        <input type="email" id="sfirstname" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-2">
+                                        <p class="checkout__left--fieldparagraph">Last name</p>
+                                        <input type="email" id="slastname" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox">
+                                        <p class="checkout__left--fieldparagraph">Address 1</p>
+                                        <input type="email" id="saddress1" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox">
+                                        <p class="checkout__left--fieldparagraph">Address 2 (optional)</p>
+                                        <input type="email" id="saddress2" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-2">
+                                        <p class="checkout__left--fieldparagraph">Country</p>
+                                        <select id="scountry" class="checkout__left--select">
+                                            <option value="India">India</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                        </select>
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-2">
+                                        <p class="checkout__left--fieldparagraph">State</p>
+                                        <select id="sstate" class="checkout__left--select">
+                                            <option value="Andra Pradesh">Andra Pradesh</option>
+                                            <option value="Arunanchal Pradesh">Arunanchal Pradesh</option>
+                                        </select>
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-3">
+                                        <p class="checkout__left--fieldparagraph">City</p>
+                                        <input type="text" id="scity" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-3">
+                                        <p class="checkout__left--fieldparagraph">Postal Code</p>
+                                        <input type="text" id="spincode" class="checkout__left--fieldtext">
+                                    </div>
+                                    <div class="checkout__left--fieldbox col-1-of-3">
+                                        <p class="checkout__left--fieldparagraph">Postal Code</p>
+                                        <input type="text" id="sphone" class="checkout__left--fieldtext">
+                                    </div>
+                                    <button class="checkout__left--submitbutton" type="submit">
+                                        Continue to shiping method
+                                    </button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        <!--####################        MAINCONTAINER       ###########################-->
+                        <div class="checkout__left--maincontainer">
+                            <form action="#" class="checkout__left--shippingform">
+                                <h5 class="checkout__left--shippingheading">
+                                    Shipping method
+                                </h5>
+                                <p class="checkout__left--shippingparagraph">
+                                    Your order will be delivered in <span>1</span> package.
+                                </p>
+                                <div class="checkout__left--shippingdetails">
+                                    <p class="checkout__left--shippingmeta">
+                                        <strong>Standard: </strong>Order now to receive 10 - 20 days.
+                                    </p>
+                                    <p class="checkout__left--shippingprice">$13.00</p>
+                                </div>
+                                <div class="checkout__left--shippingrestrictions">
+                                    <h6 class="checkout__left--shippingrestrictionsheading">
+                                        Shipping restrictions
+                                    </h6>
+                                    <p class="checkout__left--shippingrestrictionsparagraph">
+                                        All items are custom made by us, just for you. Estimated dates include 2-4 days for production and for US shipments only. Dates can’t be guaranteed for Alaska, Hawaii, PO Boxes and military bases. Some products are currently experiencing production delays
+                                    </p>
+                                    <p class="checkout__left--shippingrestrictionsparagraph">
+                                        Please add up to 6 days to standard shipping times for Face Masks
+                                    </p>
+                                    <p class="checkout__left--shippingrestrictionsparagraph">
+                                        Expected delivery dates exclude pre-order products. We will reach out once your pre-order officially ships.
+                                    </p>
+                                </div>
+                                <button class="checkout__left--submitbutton" type="submit">
+                                    Payment & Complete Order
+                                </button>
+                                <button class="checkout__left--backbutton" type="submit">
+                                    Back to Shiping information
+                                </button>
+                            </form>
+                        </div>
+                        <!--####################        MAINCONTAINER       ###########################-->
+                        <div class="checkout__left--maincontainer">
+                            <form action="#" class="checkout__left--paymentform">
+                                <h5 class="checkout__left--shippingheading">
+                                    Payment method
+                                </h5>
+                                <div class="checkout__left--paymentbox">
+                                    <div class="checkout__left--paymentgateway">
+                                        <input type="radio" name="paymentgateway" value="Paypal" id="paypalGateway" class="checkout__left--radio">
+                                        <label for="paypalGateway">
+                                            <img src="images/paypal.png" alt="" class="checkout__left--paymentgatewayimage">
+                                        </label>
+                                    </div>
+                                    <div class="checkout__left--paymentgateway">
+                                        <input type="radio" name="paymentgateway" value="Amazon" id="amazonGateway" class="checkout__left--radio">
+                                        <label for="amazonGateway">
+                                            <img src="images/amazon-pay.png" alt="" class="checkout__left--paymentgatewayimage">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="checkout__left--checkboxcontainer">
+                                    <input type="checkbox" id="applypromocodePayment" class="checkout__left--checkbox" data-select="2">
+                                    <label for="applypromocodePayment" class="checkout__left--paragraph">Apply promo codes and gift cards</label>
+                                </div>
+                                
+                                <div class="checkout__left--promoboxPayment" data-select="2">
+                                    <input type="text" id="couponPayment" class="checkout__left--text" placeholder="Add promo or coupon code">
+                                    <button class="checkout__left--button">Add</button>
+                                </div>
+                                <div class="checkout__left--promoboxPayment" data-select="2">
+                                    <input type="text" id="giftPayment" class="checkout__left--text" placeholder="Gift card code">
+                                    <button class="checkout__left--button">Add</button>
+                                </div>
+                                <button class="checkout__left--submitbutton" type="submit">
+                                    Payment & Complete Order
+                                </button>
+                                <button class="checkout__left--backbutton" type="submit">
+                                    Back to Shiping method
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__right">
+                    <div class="checkout__right--container">
+                        <h4 class="checkout__right--heading">
+                            Items in your cart (<span>2</span>)
+                        </h4>
+                        <div class="checkout__right--product">
+                            <div class="checkout__right--imagebox">
+                                <img src="images/orange-grove1237759-shower-curtains.jpg" alt="" class="checkout__right--image">
+                            </div>
+                            <div class="checkout__right--detailbox">
+                                <p class="checkout__right--productprice">
+                                    $48.99 <span>$69.99</span> 
+                                </p>
+                                <p class="checkout__right--discount">
+                                    30% Discount Applied
+                                </p>
+                                <h6 class="checkout__right--productname">
+                                    Shower Curtain
+                                </h6>
+                                <h6 class="checkout__right--attribute">
+                                    71" by 74"
+                                </h6>
+                                <div class="checkout__right--quantitybox">
+                                    <div class="checkout__right--quantitybutton">-</div>
+                                    <p class="checkout__right--quantity">
+                                        2
+                                    </p>
+                                    <div class="checkout__right--quantitybutton">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="checkout__right--heading">
+                            Summary
+                        </h4>
+                        <div class="checkout__right--tagbox">
+                            <div class="checkout__right--tagdetails">
+                                <p class="checkout__right--tagparagraph">
+                                    Your cart items
+                                </p>
+                                <div class="checkout__right--taglabel">
+                                    includes $42.00 in item discount
+                                </div>
+                            </div>
+                            <p class="checkout__right--tagprice">
+                                $97.98
+                            </p>
+                        </div>
+                        <div class="checkout__right--tagbox">
+                            <div class="checkout__right--tagdetails">
+                                <p class="checkout__right--tagparagraph">
+                                    Shipping: Standard
+                                </p>
+                                <div class="checkout__right--taglabel">
+                                    Your order will be shipped in 1 package
+                                </div>
+                            </div>
+                            <p class="checkout__right--tagprice">
+                                $13.00
+                            </p>
+                        </div>
+                        <div class="checkout__right--totalbox">
+                            <p class="checkout__right--totalparagraph">
+                                Total <span>$110.98</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="checkout__right--sloganbox">
+                        <p class="checkout__right--slogan">
+                            Get free shipping on orders of $99 or more
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+var allScreenButtons = document.querySelectorAll('.checkout__left--submitbutton');
+var allMainContainers = document.querySelectorAll('.checkout__left--maincontainer');
+var allForms = document.querySelectorAll('form');
+
+Array.from(allMainContainers).forEach( m => {
+    if(m.classList.contains('select')){
+        m.style.height = m.scrollHeight+25+'px';
+        m.parentElement.style.height = m.scrollHeight+25+'px';
+    }
+} );
+
+Array.from(allScreenButtons).forEach( (button,index) => {
+    button.addEventListener('click',function(e){
+        e.preventDefault();
+        if( index+1 < allScreenButtons.length ){
+            Array.from(allMainContainers).forEach( m=>{
+                m.classList.remove('select');
+                m.style.height = "0px";
+                //m.parentElement.style.height = allMainContainers[index+1].scrollHeight+100+'px';
+            } )
+            allMainContainers[index + 1].style.height = allMainContainers[index+1].scrollHeight+25+'px';
+            setTimeout( function(){
+                allMainContainers[index + 1].classList.add('select');
+                allMainContainers[index + 1].parentElement.style.height = allMainContainers[index+1].scrollHeight+25+'px';
+            },250 );
+        }
+    });
+} );
+
+var allBackButtons = document.querySelectorAll('.checkout__left--backbutton');
+Array.from(allBackButtons).forEach((button,index) => {
+    button.addEventListener('click',function(e){
+        e.preventDefault();
+        Array.from(allMainContainers).forEach( m=>{
+                m.classList.remove('select');
+                m.style.height = "0px";
+               // m.parentElement.style.height = allMainContainers[index].scrollHeight+100+'px';
+            } )
+            allMainContainers[index].style.height = allMainContainers[index+1].scrollHeight+25+'px';
+            setTimeout( function(){
+                allMainContainers[index].classList.add('select');
+                allMainContainers[index].parentElement.style.height = allMainContainers[index].scrollHeight+25+'px';
+            },250 );
+    });
+});
+
+</script>
+</html>

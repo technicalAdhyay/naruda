@@ -1,0 +1,27 @@
+//-------------------------------FONT--------------------------------------
+
+@font-face{
+    font-family: Greycliff;
+    src: url(greycliff.ttf);
+}
+
+@font-face{
+    font-family: Greycliff-light;
+    src: url(greycliff-cf-light-1.ttf);
+}
+@font-face{
+    font-family: Greycliff-medium;
+    src: url(greycliff-cf-medium-1.ttf);
+}
+@font-face{
+    font-family: Greycliff-heavy;
+    src: url(greycliff-cf-heavy.ttf);
+}
+$font--montserrat: 'Montserrat', sans-serif;
+$font--pt: Greycliff-light;
+$font--greycliff: Greycliff;
+$font--greycliff--light: Greycliff-light;
+$font--greycliff--medium: Greycliff-medium;
+$font--greycliff--heavy: Greycliff-heavy;
+$font--raleway: 'Raleway',sans-serif;
+$font--lato: 'Montserrat', sans-serif;

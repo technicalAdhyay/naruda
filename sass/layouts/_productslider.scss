@@ -1,0 +1,94 @@
+.productslider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 100%;
+    user-select:none;
+    &__heading{
+        font-size: 3rem;
+        font-family: $font--lato;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+        width: max-content;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5rem;
+            height: 1px;
+            background-color: rgb(194, 164, 118);
+        }
+    }
+    &__paragraph{
+        max-width: 90rem;
+        text-align: center;
+        width: 100%;
+        color: rgb(53, 53, 53);
+        font-family: $font--pt;
+        font-size: 1.6rem;
+        letter-spacing: .7px;
+        line-height: 3rem;
+        margin-bottom: 3rem;
+        padding: 0 2rem;
+        @media only screen and (max-width: 48em){
+            margin-bottom: 2rem;
+        }
+    }
+    &__container{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        
+
+        &--button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 5rem;
+            width: 5rem;
+            background-color: #555555;
+            cursor: pointer;
+            z-index: 20;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & svg{
+                height: 80%;
+                width: 80%;
+                fill: #fff;
+            }
+
+        }
+
+        &--left{
+            left: 0;
+        }
+
+        &--right{
+            right: 0;
+        }
+        
+        &--products{
+            width: calc(8*30rem);
+            display: table;
+            clear: both;
+            left: 0;
+            position: relative;
+            transition: left .3s cubic-bezier(0,.06,.16,1);
+            
+        }
+        &--product{
+            float: left;
+        }
+    }
+}
+
+

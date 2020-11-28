@@ -1,0 +1,121 @@
+.contact{
+    padding: 5rem 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 64em){
+        padding-bottom: 5rem;
+    }
+    @media only screen and (max-width: 48em){
+        padding: 3rem;
+    }
+    &__grid{
+        position: relative;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        @media only screen and (max-width: 48em){
+            width: 100%;
+        }
+        @media only screen and (max-width: 25em){
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+        }
+        &--contact{
+            width: 100%;
+        }
+        &--heading{
+            font-size: 2.2rem;
+            color: #353535;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+        &--link{
+            font-family:"PT Serif";
+            font-size:1.6rem;
+            color: #c2a476;
+            font-weight: 400;
+        }
+        &--paragraph{
+            width: 85%;
+            text-align: center;
+            font-family:"PT Serif";
+            font-size:1.6rem;
+            color: #353535;
+            letter-spacing:0.7px;
+            line-height: 3rem;
+            font-weight: 400;
+            @media only screen and (max-width: 48em){
+                width: 100%;
+                line-height: 2rem;
+            }
+        }
+    }
+    &__locations{
+        width: 100%;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,36rem);
+        grid-auto-rows: 20rem;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 2rem;
+        position: relative;
+        
+        &--location{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 100%;
+            &::after{
+                content: '';
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: #000;
+                z-index: 1;
+                opacity: .5;
+                position: absolute;
+            }
+        }
+        &--image{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        &--heading{
+            z-index: 10;
+            position: relative;
+            font-size:1.8rem;
+            font-weight: 600;
+            color: #fefefe;
+            line-height: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        &--locattion &--paragraph:last-child{
+            margin-bottom: 1rem;
+        }
+        &--paragraph{
+            z-index: 10;
+            position: relative;
+            font-family:"PT Serif";
+            font-size:1.6rem;
+            line-height: 1.6;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}

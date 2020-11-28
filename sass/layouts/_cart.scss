@@ -1,0 +1,203 @@
+.cart{
+    width: 100%;
+    padding: 3rem;
+    &__heading{
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: #5a5a5a;
+        font-family: $font--greycliff--heavy;
+        width: 100%;
+    }
+    &__grid{
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid #dedede;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.75fr 1.05fr;
+        grid-gap: 6rem;
+        position: relative;
+        
+        @media only screen and (max-width: 48em){
+            grid-template-columns: 1fr 30rem;
+            grid-gap: 2rem;
+        }
+        @media only screen and (max-width: 37.5em){
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+        }
+
+        &--left{
+            width: 100%;
+            position: relative;
+        }
+        &--right{
+            width: 100%;
+            background-color: #d1d1d1;
+            padding: 1.2rem;
+            height: max-content;
+        }
+        &--rightcontainer{
+            padding: 2.5rem;
+            background-color: #fff;
+        }
+        &--heading{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-family: $font--greycliff--heavy;
+            margin-bottom: 2rem;
+        }
+        &--box{
+            padding-top: 2rem;
+            border-top: 1px solid #d1d1d1;
+            padding-bottom: 2rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--boxheading{
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+            display: flex;
+            justify-content: space-between;
+            & span{
+                font-size: 1.5rem;
+                color: #000;
+                font-weight: 500;
+                font-family: $font--greycliff--medium;
+                
+            }
+            & strong{
+                font-weight: 700;
+                color: #0f0f0f;
+                font-family: $font--greycliff;
+            }
+        }
+        &--boxparagraph{
+            margin-top: .5rem;
+            font-weight: 300;
+            color: #888;
+            font-family: $font--greycliff--light;
+        }
+        &--checkout{
+            background-color: #373737;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.8rem;
+            font-family: $font--greycliff--heavy;
+            letter-spacing: .4px;
+        }
+    }
+    &__product{
+        width: 100%;
+        padding: 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 2rem;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        &--imagebox{
+            width: 100%;
+            height: 15rem;
+            position: relative;
+        }
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        &--descriptionbox{
+            width: 100%;
+            position: relative;
+        }
+        &--price{
+            color: #ff5d3b;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-family: $font--greycliff--medium;
+            & span{
+                margin-left: .6rem;
+                color: grey;
+                text-decoration: line-through;
+            }
+        }
+        &--discount{
+            color: #ff5d3b;
+            font-size: 1.2rem;
+            font-family: $font--greycliff--light;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        &--name{
+            color: #4e4e4e;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+        }
+        &--attribute{
+            color: #7d7d7d;
+            font-weight: 400;
+            font-size: 1.4rem;
+            font-family: $font--greycliff--light;
+        }
+        &--quantitybox{
+            margin-top: 1.5rem;
+            width: 100%;
+            height: 5rem;
+            width: 15rem;
+            display: flex;
+            padding: 0 1.5rem;
+            align-items: center;
+            border-radius: 4px;
+            justify-content: space-around;
+            border: 2px solid #d1d1d1;
+            margin-bottom: 2rem;
+        }
+        &--quantitybutton{
+            position: relative;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-family: $font--lato;
+            font-weight: 900;
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #d1d1d1;
+            border-radius: 1.5rem;
+        }
+        &--quantity{
+            position: relative;
+        }
+        &--delete{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5rem;
+            border: 1px solid #dedede;
+            cursor: pointer;
+            & svg{
+                height: 80%;
+                width: 100%;
+            }
+        }
+    }
+}

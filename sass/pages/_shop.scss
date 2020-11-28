@@ -1,0 +1,139 @@
+.shop{
+    width: 100%;
+    margin-right: 2rem;
+    border-top: 1px solid #dedede;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-auto-rows: auto;
+    @media only screen and (max-width: 64em){
+        grid-template-columns: 1fr;
+    }
+    &__filter{
+        width: 100%;
+        border-right: 1px solid #dedede;
+        padding: 1rem;
+        @media only screen and (max-width: 64em){
+            border-right: 0;
+        }
+        &--selectionbox{
+            width: 100%;
+            height: 3.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        &--heading{
+            position: relative;
+        }
+        &--selectbox{
+            height: 3rem;
+            max-width: 14rem;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-family: $font--greycliff;
+            font-weight: 700;
+            font-size: 1.4rem;
+            
+            &:focus{
+                outline: none;
+            }
+            & option{
+                font-size: 1.4rem;
+                font-family: $font--greycliff;
+                font-weight: 700;
+                padding: 1rem;
+            }
+        }
+        &--accordionbox{
+            height: 3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-weight: 700;
+            
+        }
+        &--accordionname{
+            width: 100%;
+            & span{
+                font-size: 2rem;
+            }
+        }
+        &--filterbox{
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .3s ease-in-out .3s;
+            &.select{
+                transition: all .3s ease-in-out;
+            }
+        }
+        &--filterbox.select &--filterboxcontainer{
+            margin-left: 0;
+            opacity: 1;
+            transition: all .3s ease-in-out .3s;
+        }
+        &--filterboxcontainer{
+            width: 100%;
+            margin-top: 1rem;
+            opacity: 0;
+            margin-left: 0;
+            transition: all .3s ease-in-out;
+            &.colorbox{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 3rem);
+                grid-auto-rows: 3rem;
+                grid-gap: 1rem;
+                padding-left: 1rem;
+            }
+        }
+        &--filter{
+            margin-bottom: .75rem;
+            background-color: #fff;
+            width: 100%;
+            padding: .75rem 1rem;
+            border-radius: 5rem;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: #dedede;
+            }
+            &.select{
+                background-color: #dedede;
+            }
+            &.color{
+                height: 3rem;
+                width: 3rem;
+                border-radius: 2rem;
+            }
+        }
+        &--filtername{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--svg{
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 1rem;
+            border: 1px solid #000;
+            display: none;
+        }
+        &--filter.select &--filtername &--svg{
+            display: block;
+        }
+    }
+    &__products{
+        width: 100%;
+        position: relative;
+        &--productscontainer{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+            grid-auto-rows: 40rem;
+            grid-gap: 2rem;
+            padding: 2rem;
+            justify-content: center;
+            justify-items: center;
+        }
+    }
+}

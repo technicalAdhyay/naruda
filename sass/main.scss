@@ -1,0 +1,35 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/product';
+
+@import 'layouts/grid';
+@import 'layouts/header';
+@import 'layouts/navigation';
+@import 'layouts/slider';
+@import 'layouts/productslider';
+@import 'layouts/collection';
+@import 'layouts/story';
+@import 'layouts/instagram';
+@import 'layouts/newsletter';
+@import 'layouts/footer';
+@import 'layouts/banner';
+@import 'layouts/prints';
+@import 'layouts/checkout';
+@import 'layouts/cart';
+@import 'layouts/dropdown';
+@import 'layouts/menu';
+
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/about';
+@import 'pages/account';
+@import 'pages/shop';
+@import 'pages/ppage';

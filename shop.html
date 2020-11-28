@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--############################            HEADER              ################################-->
+        <header class="header">
+            <div class="header__mobilemenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logobox">
+                <img src="images/narudalogo.png" alt="" class="header__logobox--logo">
+            </a>
+            <form class="header__searchbox">
+                <input type="text" id="searchbar" class="header__searchbox--searchbar" placeholder="find something better">
+                <button type="submit" class="header__searchbox--searchbutton">
+                    <svg class="header__searchbox--svg">
+                        <use href="svg/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="header__linkbox">
+                <a href="about.html" class="header__linkbox--link">About</a>
+                <a href="contact.html" class="header__linkbox--link">Contact</a>
+            </div>
+            <div class="header__accountbox">
+                <div class="header__accountbox--account">
+                    <a href="login.html" class="header__accountbox--login">Join | Login</a>
+                    <p class="header__accountbox--icon">
+                        <svg class="header__accountbox--svg">
+                            <use href="svg/sprite.svg#icon-star"></use>
+                        </svg>
+                    </p>
+                    <a href="cart.html" class="header__accountbox--icon">
+                        <svg class="header__accountbox--svg">
+                            <use href="svg/sprite.svg#icon-shopping-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--############################            NAVIGATION          ###############################-->
+        <nav class="navigation">
+            <div class="navigation__menu">
+                
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Home Decor</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Furniture</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Bed & Bath</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Tabletop</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Office</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Tech</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Apperal & Bags</a>
+                <a href="shop.html" class="navigation__menu--item navigation__menu--dropdown">Outdoor & Lifestyle</a>
+                
+            </div>
+        </nav>
+        <!--############################            POPUPACC            ###############################-->
+        <div class="popupacc">
+            <div class="popupacc__joinbox">
+                <h4 class="popupacc__heading">
+                    Join Naruda
+                </h4>
+                <p class="popupacc__paragraph">
+                    Follow your favorite artists, promote their artwork and sell your own.
+                </p>
+                <a href="createaccount.html" class="popupacc__button">
+                    Sign up
+                </a>
+            </div>
+            <div class="popupacc__loginbox">
+                <h4 class="popupacc__heading">
+                    Login
+                </h4>
+                <p class="popupacc__paragraph">
+                    Email Address
+                </p>
+                <input type="email" name="#" id="" class="popupacc__text">
+                <p class="popupacc__paragraph">
+                    Password
+                </p>
+                <input type="password" name="#" id="" class="popupacc__text">
+                <div class="popupacc__checkboxcontainer">
+                    <input type="checkbox" name="" id="" class="popupacc__checkbox">
+                    <p class="popupacc__paragraph">
+                        Remember me on this device
+                    </p>
+                </div>
+                <button class="popupacc__button">Sign in</button>
+            </div>
+        </div>
+
+        <!--###########################             MENU                ##############################-->
+        <div class="menu">
+
+            <div class="menu__close">
+                <svg>
+                    <use href="svg/sprite.svg#icon-x"></use>
+                </svg>
+            </div>
+
+            <div class="menu__container">
+                <div class="menu__container--searchbox">
+                    <input type="text" id="searchbar" class="menu__container--searchbar" placeholder="find something better">
+                    <button type="submit" class="menu__container--searchbutton">
+                        <svg class="menu__container--searchsvg">
+                            <use href="svg/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <a href="login.html" class="menu__container--superitem">
+                    Join | Login
+                </a>
+                <p class="menu__container--superitem sub">
+                    <span>+</span> Wall Art
+                </p>
+                <div class="menu__container--subitembox">
+                    <a href="shop.html" class="menu__container--sub">Subvategory 1</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 2</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 3</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 4</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 5</a>
+                </div>
+                <p class="menu__container--superitem sub">
+                    <span>+</span> Home Decor
+                </p>
+                <div class="menu__container--subitembox">
+                    <a href="shop.html" class="menu__container--sub">Subvategory 1</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 2</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 3</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 4</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 5</a>
+                </div>
+                <p class="menu__container--superitem sub">
+                    <span>+</span> Furniture
+                </p>
+                <div class="menu__container--subitembox">
+                    <a href="shop.html" class="menu__container--sub">Subvategory 1</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 2</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 3</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 4</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 5</a>
+                </div>
+                <p class="menu__container--superitem sub">
+                    <span>+</span> Bed & Bath
+                </p>
+                <div class="menu__container--subitembox">
+                    <a href="shop.html" class="menu__container--sub">Subvategory 1</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 2</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 3</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 4</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 5</a>
+                </div>
+                <p class="menu__container--superitem sub">
+                    <span>+</span> Tabletop
+                </p>
+                <div class="menu__container--subitembox">
+                    <a href="shop.html" class="menu__container--sub">Subvategory 1</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 2</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 3</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 4</a>
+                    <a href="shop.html" class="menu__container--sub">Subvategory 5</a>
+                </div>
+                <a href="contact.html" class="menu__container--superitem">
+                    Contact
+                </a>
+                <a href="about.html" class="menu__container--superitem">
+                    About
+                </a>
+            </div>
+        </div>
+        
+        <!--############################            DROPDOWN            ##############################-->
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory -11</a>
+                <a href="#" class="dropdown__container--link">Subcategory -21</a>
+                <a href="#" class="dropdown__container--link">Subcategory -31</a>
+                <a href="#" class="dropdown__container--link">Subcategory -41</a>
+                <a href="#" class="dropdown__container--link">Subcategory -51</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory -1</a>
+                <a href="#" class="dropdown__container--link">Subcategory -2</a>
+                <a href="#" class="dropdown__container--link">Subcategory -3</a>
+                <a href="#" class="dropdown__container--link">Subcategory -4</a>
+                <a href="#" class="dropdown__container--link">Subcategory -5</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 10</a>
+                <a href="#" class="dropdown__container--link">Subcategory 20</a>
+                <a href="#" class="dropdown__container--link">Subcategory 30</a>
+                <a href="#" class="dropdown__container--link">Subcategory 40</a>
+                <a href="#" class="dropdown__container--link">Subcategory 50</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 11</a>
+                <a href="#" class="dropdown__container--link">Subcategory 21</a>
+                <a href="#" class="dropdown__container--link">Subcategory 31</a>
+                <a href="#" class="dropdown__container--link">Subcategory 41</a>
+                <a href="#" class="dropdown__container--link">Subcategory 51</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 12</a>
+                <a href="#" class="dropdown__container--link">Subcategory 22</a>
+                <a href="#" class="dropdown__container--link">Subcategory 32</a>
+                <a href="#" class="dropdown__container--link">Subcategory 42</a>
+                <a href="#" class="dropdown__container--link">Subcategory 52</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 13</a>
+                <a href="#" class="dropdown__container--link">Subcategory 23</a>
+                <a href="#" class="dropdown__container--link">Subcategory 33</a>
+                <a href="#" class="dropdown__container--link">Subcategory 43</a>
+                <a href="#" class="dropdown__container--link">Subcategory 53</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 14</a>
+                <a href="#" class="dropdown__container--link">Subcategory 24</a>
+                <a href="#" class="dropdown__container--link">Subcategory 34</a>
+                <a href="#" class="dropdown__container--link">Subcategory 44</a>
+                <a href="#" class="dropdown__container--link">Subcategory 54</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 15</a>
+                <a href="#" class="dropdown__container--link">Subcategory 25</a>
+                <a href="#" class="dropdown__container--link">Subcategory 35</a>
+                <a href="#" class="dropdown__container--link">Subcategory 45</a>
+                <a href="#" class="dropdown__container--link">Subcategory 55</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 16</a>
+                <a href="#" class="dropdown__container--link">Subcategory 26</a>
+                <a href="#" class="dropdown__container--link">Subcategory 36</a>
+                <a href="#" class="dropdown__container--link">Subcategory 46</a>
+                <a href="#" class="dropdown__container--link">Subcategory 56</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <a href="#" class="dropdown__container--link">Subcategory 17</a>
+                <a href="#" class="dropdown__container--link">Subcategory 27</a>
+                <a href="#" class="dropdown__container--link">Subcategory 37</a>
+                <a href="#" class="dropdown__container--link">Subcategory 47</a>
+                <a href="#" class="dropdown__container--link">Subcategory 57</a>
+            </div>
+        </div>
+        
+        <!--######################      BANNER      #####################################-->
+        <div class="banner">
+            <img src="images/hero-bg-1-1.jpg" alt="" class="banner__image">
+            <h1 class="banner__heading">Shop</h1>
+        </div>
+        <!--######################      SHOP        #####################################-->
+        <div class="shop">
+            <div class="shop__filter">
+                <div class="shop__filter--selectionbox">
+                    <p class="shop__filter--heading">
+                        Sort by:
+                    </p>
+                    <select name="sortby" id="sortby" class="shop__filter--selectbox">
+                        <option value="Popular">Popular</option>
+                        <option value="Popular">New</option>
+                        <option value="Popular">Random</option>
+                    </select>
+                </div>
+
+                <!---------------------------------------------------------------->
+
+                <div class="shop__filter--accordionbox">
+                    <p class="shop__filter--accordionname">
+                        <span>+</span> Filter by
+                    </p>
+                </div>
+                <div class="shop__filter--filterbox">
+                    <div class="shop__filter--filterboxcontainer">
+
+                        <div class="shop__filter--filter select">
+                            <p class="shop__filter--filtername">
+                                + Digital
+                                <svg class="shop__filter--svg">
+                                    <use href="svg/sprite.svg#icon-x"></use>
+                                </svg>
+                            </p>
+                        </div>
+                        <div class="shop__filter--filter">
+                            <p class="shop__filter--filtername">
+                                + Graphic Design
+                                <svg class="shop__filter--svg">
+                                    <use href="svg/sprite.svg#icon-x"></use>
+                                </svg>
+                            </p>
+                        </div>
+                        <div class="shop__filter--filter">
+                            <p class="shop__filter--filtername">
+                                + Pattern
+                                <svg class="shop__filter--svg">
+                                    <use href="svg/sprite.svg#icon-x"></use>
+                                </svg>
+                            </p>
+                        </div>
+                        <div class="shop__filter--filter">
+                            <p class="shop__filter--filtername">
+                                + Abstract
+                                <svg class="shop__filter--svg">
+                                    <use href="svg/sprite.svg#icon-x"></use>
+                                </svg>
+                            </p>
+                        </div>
+                        <div class="shop__filter--filter">
+                            <p class="shop__filter--filtername">
+                                + Painting
+                                <svg class="shop__filter--svg">
+                                    <use href="svg/sprite.svg#icon-x"></use>
+                                </svg>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!---------------------------------------------------------------->
+
+                <div class="shop__filter--accordionbox">
+                    <p class="shop__filter--accordionname">
+                        <span>+</span> Color
+                    </p>
+                </div>
+
+                <div class="shop__filter--filterbox">
+                    <div class="shop__filter--filterboxcontainer colorbox">
+
+                        <div class="shop__filter--filter color" style="background-color: rgb(45, 135, 70);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(0, 0, 0);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(34, 34, 219);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(25, 107, 25);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(155, 155, 155);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(255, 0, 255);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(32, 68, 118);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(207, 124, 16);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(178, 234, 220);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(240, 176, 187);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(124, 81, 175);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(213, 18, 18);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(191, 174, 143);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(235, 239, 109);"></div>
+                        <div class="shop__filter--filter color" style="background-color: rgb(18, 35, 11);"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="shop__products">
+                <div class="shop__products--productscontainer">
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_1-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_2-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_3-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_4-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_5-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_6-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_7-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_8-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_1-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_1-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_1-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product shop__products--product">
+                        <div class="product__imagebox">
+                            <img src="images/new_product_1-300x300.png" alt="" class="product__imagebox--image">
+                        </div>
+                        <div class="product__details">
+                            <p class="product__details--category">NEW PAINTS</p>
+                            <p class="product__details--name">TRIPLE MOON</p>
+                            <p class="product__details--price">$500.00</p>
+                        </div>
+                    </a>
+                </div>                
+            </div>
+        </div>
+        <!--######################          INSTAGRAM               ##########################-->
+        <div class="instagram">
+            <div class="instagram__feed">
+                <h5 class="instagram__feed--heading">Instagram</h5>
+                <a href="#" class="instagram__feed--account">@ forpreview</a>
+                <p class="instagram__feed--paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <a href="#" class="instagram__feed--follow">follow</a>
+            </div>
+            <a href="#" class="instagram__feed">
+                <img src="images/insta_1.jpg" alt="" class="instagram__feed--image">
+            </a>
+            <a href="#" class="instagram__feed">
+                <img src="images/insta_2.jpg" alt="" class="instagram__feed--image">
+            </a>
+            <a href="#" class="instagram__feed">
+                <img src="images/insta_3.jpg" alt="" class="instagram__feed--image">
+            </a>
+        </div>
+        <!--######################          NEWSLETTER               ##########################-->
+        <h4 class="newsletter__heading">
+            Sign up for the newsletter
+        </h4>
+        <form action="#" class="newsletter">
+            <input type="text" id="newsletterEmail" class="newsletter__input" placeholder="ENTER YOUR EMAIL">
+            <button type="submit" id="newsletterSubmit" class="newsletter__button">Subscribe</button>
+        </form>
+        <!--######################          FOOTER                  ##########################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--about footer__grid--box">
+                    <img src="images/naruda-logo-white.png" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        We are a family of creators – close knit and a little crazy – handcrafting goods at our workshop New York, USA. We make beautiful products from quality materials because believe each one is a representation of who we are close.
+                    </p>
+                </div>
+                <div class="footer__grid--box">
+                    <h6 class="footer__grid--heading">
+                        SUPPORT
+                    </h6>
+                    <a href="#" class="footer__grid--link">SHIPPING & RETURN</a>
+                    <a href="#" class="footer__grid--link">PRIVACY & POLICY</a>
+                    <a href="#" class="footer__grid--link">FAQ</a>
+                    <a href="#" class="footer__grid--link">CONTACT US</a>
+                </div>
+                <div class="footer__grid--box">
+                    <h6 class="footer__grid--heading">
+                        SOCIAL
+                    </h6>
+                    <a href="#" class="footer__grid--link">FACEBOOK</a>
+                    <a href="#" class="footer__grid--link">TWITTER</a>
+                    <a href="#" class="footer__grid--link">INSTAGRAM</a>
+                    <a href="#" class="footer__grid--link">PINTEREST</a>
+                </div>
+                <div class="footer__grid--box">
+                    <h6 class="footer__grid--heading">
+                        SITEMAP
+                    </h6>
+                    <a href="#" class="footer__grid--link">WALL ART</a>
+                    <a href="#" class="footer__grid--link">HOME DECOR</a>
+                    <a href="#" class="footer__grid--link">FURNITURE</a>
+                    <a href="#" class="footer__grid--link">BED & BATH</a>
+                    <a href="#" class="footer__grid--link">TABLETOP</a>
+                    <a href="#" class="footer__grid--link">OFFICE</a>
+                    <a href="#" class="footer__grid--link">TECH</a>
+                    <a href="#" class="footer__grid--link">APPAREL & BAGS</a>
+                    <a href="#" class="footer__grid--link">OUTDOOR & LIFESTYLE</a>
+                    <a href="#" class="footer__grid--link">GIFT GUIDES</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--copyrights">
+                    NARUDA WITH LOVE © 2020 ALL RIGHTS RESERVED. | Powered by <a style="display: inline-block;color: #fff;" href="https://adhyay.co.in" target="_blank" rel="no-follow">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="js/dropdown.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/popupacc.js"></script>
+</html>

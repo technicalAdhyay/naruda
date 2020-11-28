@@ -1,0 +1,48 @@
+.instagram{
+    margin: 5rem 0;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,26.2rem);
+    justify-content: center;
+    grid-auto-rows: 26.2rem;
+    grid-gap: 4rem;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    &__feed{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        &--heading{
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            color: #353535;
+            font-family: $font--pt;
+            margin-bottom: 3rem;
+        }
+        &--account{
+            color: #c2a476;
+            font-size: 1.6rem;
+            font-family: $font--pt;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        &--paragraph{
+            font-family:$font--pt;
+            font-size:1.6rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        &--follow{
+            color: #c2a476;
+            font-size: 1.6rem;
+            font-family: $font--pt;
+            display: inline-block;
+        }
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

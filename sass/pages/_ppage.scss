@@ -1,0 +1,287 @@
+.ppage{
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+    padding: 0 13%;
+
+    @media only screen and (max-width: 64em){
+        padding: 0 5%;
+    }
+
+    &__top{
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--link{
+            color:#000;
+            transition: .2s;
+            &:hover{
+                color:#c2a476;
+            }
+        }
+        p{
+            margin: 0 1rem;
+        }
+    }
+
+    &__product{
+
+        width: 100%;
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        grid-gap: 5rem;
+
+        @media only screen and (max-width: 48em){
+            grid-template-columns: 50rem;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 28.125em){
+            grid-template-columns: 1fr;
+        }
+
+        &--left{
+            width: 100%;
+            overflow-x: hidden;
+        }
+        &--right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--bannerimagebox{
+            width: 100%;
+            height: 50rem;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--bannerimage{
+            width: 90%;
+            object-fit: cover;
+        }
+        &--thumbnailscontainer{
+            display: flex;
+            overflow-x: auto;
+            background-color: #f5f5f5;
+            
+        }
+        &--thumbnail{
+            cursor: pointer;
+            width: 15rem;
+            height: 15rem;
+            object-fit: contain;
+            object-position: center center;
+        }
+        &--right{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &--category{
+            //text-align: center;
+            color: #c2a476;
+            margin-bottom: 1rem;
+        }
+        &--name{
+            //text-align: center;
+            position: relative;
+            font-size: 2.5rem;
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0%;
+                transform: translateX(0%);
+                width: 8rem;
+                height: 1px;
+                background-color: #c2a476;
+            }
+        }
+        &--price{
+            font-family: $font--pt;
+            font-size: 2.2rem;
+            text-align: center;
+            font-weight: 400;
+        }
+        &--quantitybox{
+            width: 25rem;
+            height: 5rem;
+            background-color: #dedede;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        &--selectbox{
+            width: 25rem;
+            height: 5rem;
+            background-color: #ffffff;
+            font-family: $font--pt;
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding: 1rem;
+            outline: none;
+            margin-bottom: 2rem;
+            
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &--quantity{
+            font-family: $font--pt;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        &--quantitybuttonbox{
+            
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+        &--quantitysvg{
+            width: 100%;
+            height: 100%;
+            fill: #000;
+        }
+        &--addtocart{
+            width: 25rem;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.8rem;
+            font-family: $font--greycliff--heavy;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &--paragraph{
+            margin-top: 1rem;
+            font-size: 1.6rem;
+            font-family: $font--pt;
+            font-weight: 400;
+            letter-spacing: .7px;
+            line-height: 3rem;
+            width: 100%;
+        }
+        &--descriptionbox{
+            width: 100%;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #dedede;
+        }
+        &--description{
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            & span{
+                margin-left: 1rem;
+                text-transform: uppercase;
+            }
+            & a{
+                margin-left: 1rem;
+                color: #c2a476;
+                text-transform: uppercase;
+                & svg{
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 3rem;
+                    border: 1px solid #000;
+                    padding: .5rem;
+                }
+            }
+        }
+
+    }
+
+    &__artist{
+        position: relative;
+        @media only screen and (max-width: 48em){
+            width: 50rem;
+            margin:auto;
+        }
+        @media only screen and (max-width: 28.125em){
+            width: 100%;
+        }
+        &--meet{
+            font-size: 1.8rem;
+            border-top: 2px solid #dedede;
+            padding-top: 2rem;
+        }
+        &--detailbox{
+            display: flex;
+            margin-bottom: 2rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        &--imagebox{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 5rem;
+            overflow: hidden;
+        }
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        &--details{
+            height: 8rem;
+            margin-left: 1.5rem;
+        }
+        &--link{
+            font-family: $font--pt;
+            transition: .2s;
+            &:hover{
+                color: #c2a476;
+            }
+        }
+        &--paragraph{
+            font-family: $font--pt;
+            margin-top: 1.5rem;
+            font-weight: 700;
+        }
+    }
+
+    & .collection__heading{
+        border-top: 2px solid #dedede;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        position: relative;
+        @media only screen and (max-width: 48em){
+            width: 50rem;
+            margin: 5rem auto 0;
+        }
+        @media only screen and (max-width: 28.125em){
+            width: 100%;
+        }
+    }
+
+    & .collection{
+        @media only screen and (max-width: 48em){
+            width: 50rem;
+            margin: auto;
+        }
+        @media only screen and (max-width: 28.125em){
+            width: 100%;
+        }
+    }
+
+}

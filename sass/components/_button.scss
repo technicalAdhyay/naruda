@@ -1,0 +1,68 @@
+.popupacc{
+    position: absolute;
+    top: 8rem;
+    background-color: #fff;
+    width: 20vw;
+    z-index: 1000;
+    border-top: 3px solid blue;
+    padding: 1vw;
+    transition: .2s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%);
+
+    &.select{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__joinbox{
+        padding: 1vw;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+    }
+    &__heading{
+        font-size: 1.1vw;
+        color: #555;
+        font-weight: 400;
+        font-family: $font--greycliff--light;
+    }
+    &__paragraph{
+        margin-top: .5vw;
+        font-family: $font--greycliff--light;
+        font-size: .9vw;
+        line-height: 1.8;
+    }
+    &__button{
+        margin-top: .5vw;
+        padding: 1vw;
+        color: #dedede;
+        font-size: 1.1vw;
+        text-align: center;
+        background-color: #222;
+        width: 100%;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__loginbox{
+        padding: 1vw;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+        margin-top: 1vw;
+    }
+    &__text{
+        width: 100%;
+        padding: .75vw;
+    }
+    &__checkboxcontainer{
+        display: flex;
+        align-items: center;
+    }
+    &__checkbox{
+        margin-right: 1vw;
+        height: 1vw;
+        width: 1vw;
+    }
+}

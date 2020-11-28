@@ -1,0 +1,52 @@
+.slider{
+    width: 100%;
+    position: relative;
+    height: 45vw;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+    &__parallax{
+        transition: left 2s cubic-bezier(0,.06,.16,1);
+    }
+    &__paragraph{
+        display: block;
+        font-size: 5.5vw;
+        position: absolute;
+        top: 8vw;
+        left: 8vw;
+        font-family: $font--raleway;
+        font-weight: 100;
+        z-index: 5;
+    }
+    &__link{
+        display: inline-block;
+        position: absolute;
+        top: 30vw;
+        background-color: rgb(194, 164, 118);
+        color: #fff;
+        padding: 1.2vw 2vw;
+        font-size: 1vw;
+        font-family: $font--lato;
+        text-transform: uppercase;
+        left: 8vw;
+        z-index: 5;
+    }
+    &__image{
+        position: absolute;
+        object-fit: cover;
+        bottom: 3vw;
+        &:first-of-type{
+            width: 20vw;
+            left: 40vw;
+            z-index: 3;
+        }
+        &:nth-of-type(2){
+            width: 27vw;
+            left: 45vw;
+            z-index: 2;
+        }
+        &:last-of-type{
+            width: 51vw;
+            left: 50vw;
+        }
+    }
+}

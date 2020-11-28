@@ -1,0 +1,75 @@
+.footer{
+    &__grid{
+        color: #fff;
+        padding: 7rem 3rem 3rem;
+        background-color: #3d3d3d;
+        display: grid;
+        grid-template-columns: 2fr repeat(3,1fr);
+        grid-gap: 2rem;
+        justify-content: center;
+        @media only screen and (max-width: 35.375em){
+            grid-template-columns: 45rem;
+        }
+        @media only screen and (max-width: 28.125em){
+            grid-template-columns: 32rem;
+            padding-bottom: 2rem;
+            grid-template-columns: 1fr;
+            padding: 3rem 3rem;
+        }
+        &--box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        &--image{
+            width: 18rem;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        &--heading{
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 3rem;
+                height: 1px;
+                background-color: #c2a476;
+            }
+
+        }
+        &--paragraph{
+            color: #999;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            letter-spacing: 1px;
+            padding-right: 2rem;
+        }
+        &--link{
+            color:rgb(165, 159, 150);
+            font-size:1rem;
+            font-weight: 600;
+            transition: .3s;
+            margin-bottom: 1rem;
+            &:hover{
+                color: #c2a476;
+            }
+        }
+    }
+    &__copyright{
+        background-color: #353535;
+        padding: 1.5rem 3rem;
+        &--copyrights{
+            color: #c2a476;
+        }
+    }
+}

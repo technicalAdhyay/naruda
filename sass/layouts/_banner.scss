@@ -1,0 +1,38 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: 64em){
+        height: 40vw;
+    }    
+
+
+    &__image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+    }
+    &__heading{
+        width: fit-content;
+        position: relative;
+        z-index: 10;
+        font-size:3.6rem;
+        color: #fefefe;
+        font-weight: 600;
+        text-transform: uppercase;
+        @media only screen and (max-width: 64em){
+            font-size: 3.6vw;
+        }
+    }
+}

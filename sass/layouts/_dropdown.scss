@@ -1,0 +1,43 @@
+.dropdown{
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    transition: .3s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+    @media only screen and (max-width: 64em){
+        display: none;
+    }
+
+    &.select{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &--link{
+            display: block;
+            padding: 1.25rem 3rem;
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: Greycliff-light;
+            margin-bottom: .5rem;
+            transition: .2s;
+            background-color: #fff;
+            &:hover{
+                background-color: #dedede;
+            }
+            
+        }
+        & &--link:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

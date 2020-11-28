@@ -1,0 +1,509 @@
+.checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__grid{
+        width: 100%;
+        max-width: 124rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1.75fr 1.05fr;
+        grid-gap: 6rem;
+        position: relative;
+
+        @media only screen and (max-width: 48em){
+            grid-template-columns: 1fr;
+        }
+
+    }
+    &__left{
+        background-color: #fff;
+        position: relative;
+        &--heading{
+            font-size: 2.6rem;
+            line-height: 2.6rem;
+            font-weight: 100;
+            font-family: $font--greycliff--heavy;
+            margin-bottom: 1rem;
+        }
+        &--pagecontainer{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        &--maincontainer{
+            height: 0;
+            
+            width: 100%;
+            transition: .3s ease-in-out 0.2s;
+            opacity: 0;
+            z-index: -1;
+            //overflow: hidden;
+            background-color: #fff;
+            margin-top: 0;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            &.select{
+                width: 100%;
+                z-index: 20;
+                opacity: 1;
+                visibility: visible;
+                margin-top: 1rem;
+                
+            }
+        }
+        //------------------------CONTAINER 1-------------------------------------
+        &--checkboxcontainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            display: none;
+        }
+        &--checkbox{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 1rem;
+        }
+        &--paragraph{
+            font-size: 1.4rem;
+            color: #000;
+            font-family: $font--greycliff--medium;
+            font-weight: 400;
+        }
+        &--promobox{
+            height: 6.2rem;
+            width: 100%;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 2px solid #dedede;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 0 1.8rem;
+        }
+        &--text{
+            padding: 1.8rem 0 1.8rem 1.8rem;
+            position: relative;
+            width: 100%;
+            height: 4rem;
+            border: none;
+            outline: none;
+            color: #000;
+            width: 68%;
+            font-family: $font--greycliff--heavy;
+        }
+        &--button{
+            width: 32%;
+            height: 4rem;
+            background-color: #f4f4f4;
+            border: 2px solid #dedede;
+            font-weight: 500;
+            font-size: 1.4rem;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all .2s ease-in-out;
+            color: #989898;
+            font-family: $font--greycliff--medium;
+            &:hover{
+                background-color: #dedede;
+                
+            }
+        }
+        &--checkoutbox{
+            margin-top: 2rem;
+            display: flex;
+        }
+        &--checkout{
+            margin-right: 1.5rem;
+            width: 20rem;
+            height: 3.5rem;
+            border-radius: 4px;
+            background-color: rgb(255, 223, 41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+            cursor: pointer;
+        }
+        &--form{
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #dedede;
+        }
+        &--infoparagraph{
+            font-size: 2.1rem;
+            color: #0b0b0b;
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+            font-family: $font--greycliff--medium;
+        }
+        &--grid{
+            width: 100%;
+            display: table;
+            clear: both;
+            overflow-x: hidden;
+        }
+        &--fieldbox{
+            width: calc(100% - 1rem);
+            height: 6.8rem;
+            border-radius: 3px;
+            border: 1px solid #b9b9bb;
+            padding: .5rem 1rem;
+            float: left;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &.col-1-of-2{
+                width: calc(50% - 1rem);
+            }
+            &.col-1-of-3{
+                width: calc(33.33% - 1rem);
+            }
+        }
+        &--fieldparagraph{
+            font-size: 1.2rem;
+            letter-spacing: normal;
+            font-weight: 500;
+            font-family: $font--greycliff--light;
+            color: #767676;
+            text-transform: capitalize;
+        }
+        &--fieldtext{
+            border: none;
+            height: 4.4rem;
+            font-size: 1.6rem;
+            color: #000;
+            font-family: $font--greycliff--light;
+            font-weight: 700;
+        }
+        &--select{
+            border: none;
+            width: 100%;
+            color: rgb(51, 51, 51);
+            font-weight: 400;
+            font-family: $font--greycliff--light;
+            height: 4.4rem;
+            padding: .5rem;
+            outline: none;
+            &::selection{
+                outline: none;
+            }
+            & option{
+                color: rgb(51, 51, 51);
+                font-weight: 400;
+                font-family: $font--greycliff--light;
+            }
+        }
+        &--submitbutton{
+            width: calc(100% - 1rem);
+            margin-left: 1rem;
+            background-color: #000;
+            border: 2px solid #000;
+            color: #fff;
+            cursor: pointer;
+            height: 4.5rem;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 1.8rem;
+            font-family: $font--greycliff--medium;
+        }
+        &--backbutton{
+            width: calc(100% - 1rem);
+            margin-left: 1rem;
+            background-color: #777;
+            border: 2px solid #777;
+            color: #fff;
+            cursor: pointer;
+            height: 4.5rem;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 1.8rem;
+            font-family: $font--greycliff--medium;
+            margin-top: 2rem;
+        }
+        //------------------------------CONTAINER 2-----------------------------------
+        &--shippingform{
+            width: 100%;
+            position: relative;
+        }
+        &--shippingheading{
+            font-size: 1.8rem;
+            font-family: $font--greycliff--heavy;
+            margin-left: 1rem;
+        }
+        &--shippingparagraph{
+            margin-bottom: 2rem;
+            color: #6e6e6e;
+            font-size: 1.2rem;
+            position: relative;
+            font-family: $font--greycliff--medium;
+            font-weight: 400;
+            margin-left: 1rem;
+        }
+        &--shippingdetails{
+            margin-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        &--shippingmeta{
+            color: #565656;
+            font-weight: 600;
+            font-family: $font--greycliff--light;
+            font-size: 1.5rem;
+            font-weight: 800;
+            & strong{
+                font-weight: 700;
+                font-family: $font--greycliff;
+                color: #000;
+                font-size: 1.8rem;
+            }
+        }
+        &--shippingprice{
+            font-weight: 700;
+            font-family: $font--greycliff;
+            color: rgb(36, 36, 36);
+            font-size: 1.6rem;
+        }
+        &--shippingrestrictions{
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            background-color: #fcf6f5;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        &--shippingrestrictionsheading{
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-family: $font--greycliff--light;
+            letter-spacing: -0.21px;
+            color: #ff7a5e;
+        }
+        &--shippingrestrictionsparagraph{
+            margin-top: 2rem;
+            font-family: $font--greycliff--medium;
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.89rem;
+            color: rgb(81, 81, 81);
+        }
+        //-----------------------------CONTAINER 3--------------------------------------
+        &--paymentbox{
+            display: block;
+        }
+        &--paymentgateway{
+            margin-top: 2rem;
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+            //justify-content: center;
+        }
+        &--radio{
+            margin-right: 1.5rem;
+        }
+        &--paymentgatewayimage{
+            width: 6rem;
+        }
+        &--checkboxcontainer{
+            margin-left: 1rem;
+            margin-top: 2rem;
+        }
+        &--checkbox{
+            position: relative;
+        }
+        &--promoboxPayment{
+            height: 6.2rem;
+            width: calc(100% - 1rem);
+            margin-left: 1rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 2px solid #dedede;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 0 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__right{
+        background-color: #d1d1d1;
+        padding: 1.2rem;
+        height: max-content;
+        position: sticky;
+        top: 2rem;
+
+        @media only screen and (max-width: 48em){
+            grid-row: 1/2;
+            position: relative;
+            top: 0;
+        }
+        
+        &--container{
+            padding: 2.5rem;
+            background-color: #fff;
+        }
+        &--heading{
+            font-size: 2.1rem;
+            color: #0b0b0b;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            font-family: $font--greycliff--medium;
+            & span{
+                font-weight: 500;
+            }
+        }
+        &--product{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 10rem 1fr;
+            grid-auto-rows: auto;
+            grid-gap: 2rem;
+            position: relative;
+        }
+        &--imagebox{
+            width: 100%;
+            height: 10rem;
+        }
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        &--detailbox{
+            width: 100%;
+            position: relative;
+        }
+        &--productprice{
+            color: #ff5d3b;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-family: $font--greycliff--medium;
+            & span{
+                margin-left: .6rem;
+                color: grey;
+                text-decoration: line-through;
+            }
+        }
+        &--discount{
+            color: #ff5d3b;
+            font-size: 1.2rem;
+            font-family: $font--greycliff--light;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        &--productname{
+            color: #4e4e4e;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+        }  
+        &--attribute{
+            color: #7d7d7d;
+            font-weight: 400;
+            font-size: 1.4rem;
+            font-family: $font--greycliff--light;
+        }
+        &--quantitybox{
+            margin-top: 1.5rem;
+            width: 100%;
+            height: 5rem;
+            width: 15rem;
+            display: flex;
+            padding: 0 1.5rem;
+            align-items: center;
+            border-radius: 4px;
+            justify-content: space-around;
+            border: 2px solid #d1d1d1;
+            margin-bottom: 2rem;
+        }
+        &--quantitybutton{
+            position: relative;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-family: $font--lato;
+            font-weight: 900;
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #d1d1d1;
+            border-radius: 1.5rem;
+        }
+        &--quantity{
+            position: relative;
+        }
+        &--tagbox{
+            padding-top: 2rem;
+            border-top: 1px solid #d1d1d1;
+            display: flex;
+            padding-bottom: 2rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--tagdetails{
+            position: relative;
+        }
+        &--tagparagraph{
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+        }
+        &--taglabel{
+            margin-top: .5rem;
+            font-weight: 300;
+            color: #888;
+            font-family: $font--greycliff--light;
+        }
+        &--tagprice{
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: 500;
+            font-family: $font--greycliff--medium;
+        }
+        &--totalbox{
+            padding-top: 2rem;
+            border-top: 1px solid #d1d1d1;
+        }
+        &--totalparagraph{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            color: #0f0f0f;
+        }
+        &--sloganbox{
+            background-color: #373737;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--slogan{
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.2rem;
+            font-family: $font--greycliff--heavy;
+            letter-spacing: .4px;
+        }
+    }
+}
